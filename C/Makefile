@@ -56,6 +56,7 @@ sully: $(EXEC3)
 	@echo "$(WHITE)Running Sully...$(NO_COLOR)"
 	./$(EXEC3)
 	@echo "$(RED)Comparing Sully output...$(NO_COLOR)"
+	- diff $(SRC3) Sully_5.c
 	- diff $(SRC3) Sully_4.c
 	- diff $(SRC3) Sully_3.c
 	- diff $(SRC3) Sully_2.c
